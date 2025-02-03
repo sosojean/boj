@@ -12,6 +12,8 @@ curr = 0
 new_stack = []
 ans_list = []
 
+possible = True
+
 for i in stack :
 
     while(i > curr):
@@ -26,11 +28,12 @@ for i in stack :
 
         new_stack.pop()
         ans_list.append('-')
+    else : 
+        possible = False
 
 
-
-if len(new_stack) > 0 :
-    print('No')
+if not possible :
+    print('NO')
 else :
     for ans in ans_list:
         print(ans)
