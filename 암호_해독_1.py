@@ -15,10 +15,9 @@ def slice_text():
     sliced_list = ["" for _ in range(col)]
     for i in range(len_key):
         text = c_text[i*col: (i+1)*col]
-        # print(text)
+
         for j in range (col):
             sliced_list[j]+= text[j]
-    # print(sliced_list)
         
 
     return sliced_list
